@@ -318,7 +318,7 @@
 		"method": "POST",
 		"headers": {
 			"content-type": "application/json",
-			"x-apikey": "fe5f1f8d2de64fa241c47f8fc8803e1521445",
+			"x-apikey": "61e16a0fa0f7d226f9b75e1a",
 			"cache-control": "no-cache"
 		},
 		"processData": false,
@@ -330,9 +330,6 @@
 		  )
 		
 		$.ajax(settings).done( (response) => {
-			name.val("")
-			status.val("")
-			message.val("")
 			$(this).attr("disabled", "disabled")
 		});
 
@@ -385,7 +382,7 @@
 		"method": "GET",
 		"headers": {
 		  "content-type": "application/json",
-		  "x-apikey": "fe5f1f8d2de64fa241c47f8fc8803e1521445",
+		  "x-apikey": "61e16a0fa0f7d226f9b75e1a",
 		  "cache-control": "no-cache"
 		}
 	  }

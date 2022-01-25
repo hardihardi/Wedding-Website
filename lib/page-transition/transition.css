@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+
+body .easytransitions_transition div {
+  width: 200px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: scale(0);
+  z-index: 1;
+}
+body .easytransitions_transition .split_diagonal, body .easytransitions_transition .split_diagonal_alt, body .easytransitions_transition .split_diamond {
+  -webkit-animation: diamond 1.2s;
+          animation: diamond 1.2s;
+  transform: scale(0) rotate(45deg);
+}
+body .easytransitions_transition .split_horizontal, body .easytransitions_transition .wipe_top, body .easytransitions_transition .wipe_bottom {
+  transform: scaleY(0);
+}
+body .easytransitions_transition .split_vertical, body .easytransitions_transition .wipe_left, body .easytransitions_transition .wipe_right {
+  transform: scaleX(0);
+}
+body .easytransitions_transition__part-1 {
+  left: -100px;
+  top: -100px;
+}
+body .easytransitions_transition__part-1.split_diagonal_alt, body .easytransitions_transition__part-1.split_vertical, body .easytransitions_transition__part-1.split_horizontal {
+  display: none;
+}
+body .easytransitions_transition__part-2 {
+  bottom: -100px;
+  left: -100px;
+}
+body .easytransitions_transition__part-2.split_diagonal, body .easytransitions_transition__part-2.split_vertical, body .easytransitions_transition__part-2.split_horizontal {
+  display: none;
+}
+body .easytransitions_transition__part-3 {
+  top: -100px;
+  right: -100px;
+}
+body .easytransitions_transition__part-3.split_diagonal, body .easytransitions_transition__part-3.split_vertical, body .easytransitions_transition__part-3.split_horizontal {
+  display: none;
+}
+body .easytransitions_transition__part-4 {
+  bottom: -100px;
+  right: -100px;
+}
+body .easytransitions_transition__part-4.split_diagonal_alt, body .easytransitions_transition__part-4.split_vertical, body .easytransitions_transition__part-4.split_horizontal {
+  display: none;
+}
+body .easytransitions_transition__part-5 {
+  height: 100% !important;
+  display: none;
+  left: 0px;
+  transform-origin: 0px 200px;
+  -webkit-animation: vertical 1.2s forwards;
+          animation: vertical 1.2s forwards;
+}
+body .easytransitions_transition__part-5.split_vertical, body .easytransitions_transition__part-5.wipe_left {
+  display: block;
+}
+body .easytransitions_transition__part-6 {
+  height: 100% !important;
+  display: none;
+  right: -200px;
+  transform-origin: 0px 200px;
+  -webkit-animation: vertical_r 1.2s forwards;
+          animation: vertical_r 1.2s forwards;
+}
+body .easytransitions_transition__part-6.split_vertical, body .easytransitions_transition__part-6.wipe_right {
+  display: block;
+}
+body .easytransitions_transition__part-7 {
+  width: 100% !important;
+  display: none;
+  bottom: -100px;
+  -webkit-animation: horizontal 1s forwards;
+          animation: horizontal 1s forwards;
+}
+body .easytransitions_transition__part-7.split_horizontal, body .easytransitions_transition__part-7.wipe_bottom {
+  display: block;
+}
+body .easytransitions_transition__part-8 {
+  width: 100% !important;
+  display: none;
+  top: -100px;
+  -webkit-animation: horizontal 1s forwards;
+          animation: horizontal 1s forwards;
+}
+body .easytransitions_transition__part-8.split_horizontal, body .easytransitions_transition__part-8.wipe_top {
+  display: block;
+}
+@-webkit-keyframes diamond {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    transform: rotate(45deg) scale(10);
+  }
+  100% {
+    transform: rotate(45deg) scale(0);
+  }
+}
+@keyframes diamond {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    transform: rotate(45deg) scale(10);
+  }
+  100% {
+    transform: rotate(45deg) scale(0);
+  }
+}
+@-webkit-keyframes vertical {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(10);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes vertical {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(10);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@-webkit-keyframes vertical_r {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(-10);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes vertical_r {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(-10);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@-webkit-keyframes horizontal {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(10);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+@keyframes horizontal {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(10);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+body .easytransitions_navigation {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  right: 0;
+}
+body .easytransitions_navigation i {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+body .easytransitions_navigation__left {
+  float: left;
+  margin-left: 30px;
+}
+body .easytransitions_navigation__right {
+  float: right;
+  margin-right: 30px;
+}
+body .easytransitions .active_slide {
+  display: block;
+}
+body .easytransitions section {
+  height: 100vh;
+  display: none;
+}
+body .easytransitions section .center {
+  position: absolute;
+  left: 0;
+  margin: auto;
+  width: 600px;
+  font-family: "nunito";
+  right: 0;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .easytransitions section:nth-of-type(1) {
+  background: #ff9681;
+}
+body .easytransitions section:nth-of-type(2) {
+  background: #8ac5c3;
+}
+body .easytransitions section:nth-of-type(3) {
+  background: #c06c84;
+}
+body .easytransitions section:nth-of-type(4) {
+  background: #dfdccd;
+}
+body .easytransitions section:nth-of-type(5) {
+  background: #bfb1d5;
+}
+body .easytransitions section:nth-of-type(6) {
+  background: #f0e0a2;
+}
+body .easytransitions section:nth-of-type(7) {
+  background: #adddcf;
+}
+body .easytransitions section:nth-of-type(8) {
+  background: #ff9681;
+}
+body .easytransitions section:nth-of-type(9) {
+  background: #fed1be;
+}
+body .easytransitions section:nth-of-type(10) {
+  background: #d0c7c2;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <div class='easytransitions'>
+        <div class='easytransitions_transition'>
+          <div class='div easytransitions_transition__part-1 none'></div>
+          <div class='div easytransitions_transition__part-2 none'></div>
+          <div class='div easytransitions_transition__part-3 none'></div>
+          <div class='div easytransitions_transition__part-4 none'></div>
+          <div class='div easytransitions_transition__part-5 none'></div>
+          <div class='div easytransitions_transition__part-6 none'></div>
+          <div class='div easytransitions_transition__part-7 none'></div>
+          <div class='div easytransitions_transition__part-8 none'></div>
+        </div>
+        <div class='easytransitions_navigation'>
+          <div class='easytransitions_navigation__left'>
+            <i class='icon ion-arrow-left-c'></i>
+          </div>
+          <div class='easytransitions_navigation__right'>
+            <i class='icon ion-arrow-right-c'></i>
+          </div>
+        </div>
+        <section class='active_slide' data-transition='none'>
+          <div class='center'>
+            <h1>Super Easy Slider/Page Transitions</h1>
+            <h2>Go ahead, click the lil arrows</h2>
+          </div>
+        </section>
+        <section data-transition='split_diagonal'>
+          <div class='center'>
+            <h1>You see that?</h1>
+            <span>%section{'data-transition' => 'split_diagonal'}</span>
+          </div>
+        </section>
+        <section data-transition='split_diagonal_alt'>
+          <div class='center'>
+            <h1>So smooth!</h1>
+            <span>%section{'data-transition' => 'split_diagonal_alt'}</span>
+          </div>
+        </section>
+        <section data-transition='split_diamond'>
+          <div class='center'>
+            <h1>Such swag!</h1>
+            <span>%section{'data-transition' => 'split_diamond'}</span>
+          </div>
+        </section>
+        <section data-transition='split_vertical'>
+          <div class='center'>
+            <h1>Easy to implement!</h1>
+            <span>%section{'data-transition' => 'split_vertical'}</span>
+          </div>
+        </section>
+        <section data-transition='split_horizontal'>
+          <div class='center'>
+            <h1>Fun to use!</h1>
+            <span>%section{'data-transition' => 'split_horizontal'}</span>
+          </div>
+        </section>
+        <section data-transition='wipe_left'>
+          <div class='center'>
+            <h1>Looks good!</h1>
+            <span>%section{'data-transition' => 'wipe_left'}</span>
+          </div>
+        </section>
+        <section data-transition='wipe_right'>
+          <div class='center'>
+            <h1>Feels good!</h1>
+            <span>%section{'data-transition' => 'wipe_right'}</span>
+          </div>
+        </section>
+        <section data-transition='wipe_top'>
+          <div class='center'>
+            <h1>Another transition</h1>
+            <span>%section{'data-transition' => 'wipe_top'}</span>
+          </div>
+        </section>
+        <section data-transition='wipe_bottom'>
+          <div class='center'>
+            <h1>Well you got this far, hows about a cheeky follow?</h1>
+            <a class='download' href='https://codepen.io/jcoulterdesign/pens/popular/' target='_blank'>
+              <i class="icon ion-eye"></i> <span>View my other pens</span>
+            </a>
+            <a class='follow' href='https://codepen.io/jcoulterdesign/' target='_blank'>
+              <i class="icon ion-social-codepen-outline"></i> <span>Follow me on codepen</span>
+            </a>
+          </div>
+        </section>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="transition.js"></script>
+</body>
+</html>

@@ -16,6 +16,18 @@
     scrollProperty: 'scroll'
   });
 
+  $(".music-player").on("click", function(){
+	var myAudio = document.getElementById("myAudio");
+
+	if(myAudio.paused){
+		$(".music-player").removeClass("opacity-40")
+		myAudio.play();
+	}else{
+		$(".music-player").addClass("opacity-40")
+		myAudio.pause()
+	}
+  })
+
 
 	var fullHeight = function() {
 
@@ -236,7 +248,7 @@
 				
 			}
 
-		} , { offset: '95%' } );
+		} , { offset: '150%' } );
 	};
 	contentWayPoint();
 
@@ -432,14 +444,18 @@
 	}
 
 	$("#open-modal").click(function(){
-		$("body").removeClass("modal-open")
-		$(this).parent().addClass("hidden")
-		$(".scroll-icon-wrapper").removeClass("hidden")
-		$("#home").removeClass("hidden-fade").addClass("fade-in")
-		setTimeout(()=>{
-			$("#home").removeClass("fade-in")
-		},1000)
-		$("#bot-menu").removeClass("hidden")
+		$('.easytransitions_transition div').each(function(){
+			$(this).removeClass(this.className.split(' ').pop());
+			setTimeout(function(){
+			  $('.easytransitions_transition div ').addClass("split_diamond")
+			  setTimeout(function(){
+				$(".music-player").css("opacity", "1")
+				$(".home-modal").addClass("hidden").css("opacity", "0")
+			  	$("body").removeClass("modal-open")
+				  document.getElementById("myAudio").play();
+			  }, 100)
+			},100)
+		})
 	})
 
 	window.onbeforeunload = function () {
@@ -449,4 +465,3 @@
 setInterval(function() { makeTimer(); }, 1000);
 
 })(jQuery);
-

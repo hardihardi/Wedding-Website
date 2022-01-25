@@ -248,7 +248,7 @@
 				
 			}
 
-		} , { offset: '150%' } );
+		} , { offset: '95%' } );
 	};
 	contentWayPoint();
 

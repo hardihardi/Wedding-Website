@@ -14,7 +14,12 @@
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: 'scroll'
-  });
+  });	
+
+  if ('scrollRestoration' in history) {
+	history.scrollRestoration = 'manual';
+  }
+
 
   $(".music-player").on("click", function(){
 	var myAudio = document.getElementById("myAudio");
@@ -215,6 +220,7 @@
 	}
 	counter();
 
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
 	var contentWayPoint = function() {
 		var i = 0;
@@ -248,7 +254,7 @@
 				
 			}
 
-		} , { offset: '105%' } );
+		} , { offset: isMobile ? '95%' : '140%' } );
 	};
 	contentWayPoint();
 
@@ -440,7 +446,7 @@
 	const untuk = urlParams.get('untuk');
 
 	if(untuk != undefined){
-		$("#dear").text(`Untuk ${untuk}`)
+		$("#dear").text(`${untuk}`)
 	}
 
 	$("#open-modal").click(function(){
@@ -450,7 +456,7 @@
 			  $('.easytransitions_transition div ').addClass("split_diamond")
 			  setTimeout(function(){
 				$(".music-player").css("opacity", "1")
-				$(".home-modal").css("opacity", "0").remove()
+				$(".home-modal").css("opacity", "0").addClass("hidden")
 			  	$("body").removeClass("modal-open")
 				  document.getElementById("myAudio").play();
 			  }, 100)
@@ -458,10 +464,11 @@
 		})
 	})
 
-	window.onbeforeunload = function () {
-		window.scrollTo(0, 0);
-	  }
-
 setInterval(function() { makeTimer(); }, 1000);
 
 })(jQuery);
+
+
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
+}

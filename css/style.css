@@ -13658,20 +13658,20 @@ textarea.form-control {
     margin-bottom: 4px;
     margin: auto;
     position: absolute;
-      z-index: 110000;
-      /* top: 0; */
-      color: white;
-      top: 55%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 80%;
-      padding: 10px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    z-index: 110000;
+    /* top: 0; */
+    color: white;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   body .easytransitions_transition div {
@@ -13926,20 +13926,20 @@ textarea.form-control {
     margin-bottom: 4px;
     margin: auto;
     position: absolute;
-      z-index: 110000;
-      /* top: 0; */
-      color: white;
-      top: 55%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 80%;
-      padding: 10px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    z-index: 110000;
+    /* top: 0; */
+    color: white;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   body .easytransitions_transition div {
@@ -13947,9 +13947,10 @@ textarea.form-control {
     left: 45%;
   }
 
-  .about-wedding{
+  .about-wedding {
     margin-right: 15px;
   }
+
   .bg-about-wedding {
     margin-bottom: 45px;
     margin-top: 45px;
@@ -13961,7 +13962,7 @@ textarea.form-control {
     margin-right: 50px;
     opacity: .6;
   } */
-/* 
+  /* 
   #bride {
     margin-top: 40px;
     margin-left: 50px;
@@ -14037,16 +14038,16 @@ textarea.form-control {
 
 .form-control::-webkit-input-placeholder {
   /* Edge */
-  color : rgba(0, 0, 0, .3)
+  color: rgba(0, 0, 0, .3)
 }
 
 .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color : rgba(0, 0, 0, .3)
+  color: rgba(0, 0, 0, .3)
 }
 
 .form-control::placeholder {
-  color : rgba(0, 0, 0, .3)
+  color: rgba(0, 0, 0, .3)
 }
 
 .modal-open {
@@ -14268,6 +14269,7 @@ textarea.form-control {
   height: 100%;
   transform: translateX(-50%);
 }
+
 .slideshow--hero {
   z-index: 3;
   left: 0;
@@ -14278,6 +14280,7 @@ textarea.form-control {
   overflow: hidden;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }
+
 .slideshow--hero .slides {
   position: absolute;
   left: 0;
@@ -14286,18 +14289,22 @@ textarea.form-control {
   height: 100vh;
   animation: 11s slideshow-hero-mobile -3s infinite;
 }
+
 .slideshow--hero .slide1 {
   background-image: url("/images/slider/Slider-1.png");
   animation: 10s slides-set-1 -0.1s infinite;
 }
+
 .slideshow--hero .slide2 {
   background-image: url("/images/slider/Slider-2.png");
   animation: 10s slides-set-2 -0.1s infinite;
 }
+
 .slideshow--hero .slide3 {
   background-image: url("/images/slider/Slider-3.png");
   animation: 10s slides-set-3 -0.1s infinite;
 }
+
 @media (min-width: 600px) {
   .slideshow--hero {
     left: 50%;
@@ -14306,6 +14313,7 @@ textarea.form-control {
     height: 100%;
     transform: translateX(-50%) skewX(-10deg);
   }
+
   .slideshow--hero .slides {
     top: 0;
     left: -25%;
@@ -14313,39 +14321,48 @@ textarea.form-control {
     animation: 11s slideshow-hero -3s infinite;
   }
 }
+
 .slideshow--contrast {
   z-index: 1;
   width: 100%;
   height: 50%;
   transform: none;
 }
+
 .slideshow--contrast--before {
   left: 0;
 }
+
 .slideshow--contrast--before .slides {
   width: 100vw;
 }
+
 .slideshow--contrast--after {
   z-index: 2;
   left: auto;
   right: 0;
 }
+
 .slideshow--contrast--after .slides {
   width: 100vw;
   left: auto;
   right: 0;
 }
+
 .slideshow--contrast .slides {
   animation: 14s slideshow-contrast -5s infinite;
 }
+
 .slideshow--contrast .slide1 {
-  background-image: linear-gradient(to bottom,rgba(131, 157, 170, 0.25) 0, rgba(69, 104, 123, 0.5) 100%), url("/images/slider/Slider-1.png");
+  background-image: linear-gradient(to bottom, rgba(131, 157, 170, 0.25) 0, rgba(69, 104, 123, 0.5) 100%), url("/images/slider/Slider-1.png");
   animation: 20s slides-set-1 -0.2s infinite;
 }
+
 .slideshow--contrast .slide2 {
-  background-image: linear-gradient(to bottom,rgba(131, 157, 170, 0.25) 0, rgba(69, 104, 123, 0.5) 100%), url("/images/slider/Slider-2.png");
+  background-image: linear-gradient(to bottom, rgba(131, 157, 170, 0.25) 0, rgba(69, 104, 123, 0.5) 100%), url("/images/slider/Slider-2.png");
   animation: 20s slides-set-2 -0.2s infinite;
 }
+
 .slideshow--contrast .slide3 {
   background-image: linear-gradient(to bottom, rgba(131, 157, 170, 0.25) 0, rgba(69, 104, 123, 0.5) 100%), url("/images/slider/Slider-3.png");
   animation: 20s slides-set-3 -0.2s infinite;
@@ -14355,30 +14372,38 @@ textarea.form-control {
   top: auto;
   bottom: 0;
 }
+
 .slideshow--contrast--after .slides {
   animation: 13s slideshow-contrast -13s infinite;
 }
+
 .slideshow--contrast--after .slide {
   background-position: right;
 }
+
 .slideshow--contrast--after .slide1 {
   animation: 20s slides-set-1 infinite;
 }
+
 .slideshow--contrast--after .slide2 {
   animation: 20s slides-set-2 infinite;
 }
+
 .slideshow--contrast--after .slide3 {
   animation: 20s slides-set-3 infinite;
 }
+
 @media (min-width: 600px) {
   .slideshow--contrast {
     width: 50%;
     height: 100%;
   }
+
   .slideshow--contrast--after {
     top: 0;
     bottom: auto;
   }
+
   .slideshow--contrast--after .slides {
     width: 50vw;
   }
@@ -14400,100 +14425,124 @@ textarea.form-control {
   0% {
     transform: scale(1) skewY(10deg);
   }
+
   50% {
     transform: scale(1.05) skewY(10deg);
   }
+
   100% {
     transform: scale(1) skewY(10deg);
   }
 }
+
 @keyframes slideshow-hero {
   0% {
     transform: scale(1) skewX(10deg);
   }
+
   50% {
     transform: scale(1.05) skewX(10deg);
   }
+
   100% {
     transform: scale(1) skewX(10deg);
   }
 }
+
 @keyframes slideshow-contrast {
   0% {
     transform: scale(1.05);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.05);
   }
 }
+
 @keyframes slides-set-1 {
   0% {
     opacity: 1;
     transform: scale(1);
   }
+
   31% {
     opacity: 1;
     transform: scale(1);
   }
+
   34% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   97% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
+
 @keyframes slides-set-2 {
   0% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   31% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   34% {
     opacity: 1;
     transform: scale(1);
   }
+
   64% {
     opacity: 1;
     transform: scale(1);
   }
+
   67% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   100% {
     opacity: 0;
     transform: scale(1.05);
   }
 }
+
 @keyframes slides-set-3 {
   0% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   64% {
     opacity: 0;
     transform: scale(1.05);
   }
+
   67% {
     opacity: 1;
     transform: scale(1);
   }
+
   97% {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1.05);
@@ -14503,9 +14552,9 @@ textarea.form-control {
 
 
 .slideshow-text img {
-  color : white;
-  width : 30px;
-  height : 40px;
+  color: white;
+  width: 30px;
+  height: 40px;
 }
 
 .slideshow.slideshow--hero .overlay {
@@ -14520,17 +14569,23 @@ textarea.form-control {
   background: #000000;
 }
 
-.music-player{
+.music-player {
   position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 900;
-    opacity: 0;
-    cursor: pointer;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 900;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.opacity-40{
-  opacity: .4!important;
+.opacity-40 {
+  opacity: .4 !important;
+}
+
+
+#home-modal {
+  position: relative;
+  z-index: 100000;
 }

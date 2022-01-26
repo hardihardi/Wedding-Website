@@ -254,7 +254,7 @@
 				
 			}
 
-		} , { offset: isMobile ? '95%' : '140%' } );
+		} , { offset: isMobile ? '110%' : '140%' } );
 	};
 	contentWayPoint();
 
@@ -456,6 +456,7 @@
 			  $('.easytransitions_transition div ').addClass("split_diamond")
 			  setTimeout(function(){
 				$(".music-player").css("opacity", "1")
+				$(".gift-wrapper").css("opacity", "1")
 				$(".home-modal").css("opacity", "0").addClass("hidden")
 			  	$("body").removeClass("modal-open")
 				  document.getElementById("myAudio").play();

@@ -13650,6 +13650,9 @@ textarea.form-control {
 
 
 @media (max-width: 768px) {
+  .card {
+    margin-bottom: 40px;
+  }
   .slideshow-text {
     font-size: 14px;
     font-family: 'Poppins';
@@ -14580,6 +14583,34 @@ textarea.form-control {
   cursor: pointer;
 }
 
+
+.gift-wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  z-index: 900;
+  opacity: 0;
+}
+
+.gift {
+  cursor: pointer;
+    background: #337180;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.gift img {
+  width: 40px;
+  height: 40px;
+}
+
+
 .opacity-40 {
   opacity: .4 !important;
 }
@@ -14588,4 +14619,10 @@ textarea.form-control {
 #home-modal {
   position: relative;
   z-index: 100000;
+}
+
+.card {
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+  max-width: 100%;
 }

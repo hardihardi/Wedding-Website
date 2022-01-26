@@ -254,7 +254,7 @@
 				
 			}
 
-		} , { offset: isMobile ? '110%' : '140%' } );
+		} , { offset: isMobile ? '100%' : '140%' } );
 	};
 	contentWayPoint();
 

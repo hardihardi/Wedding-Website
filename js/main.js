@@ -328,7 +328,7 @@
 		let message =  $("#message").val(); 
 		let attendance =  $("#attendance").val(); 
 
-		let jsondata = {"name": name,"status": status, "comment" : message, "attendance" : attendance};
+		let jsondata = {"name": name,"status": status, "comment" : message, "attendance" : attendance, "created_at" : Date.now()};
 
 		let settings = {
 		"async": true,
@@ -403,7 +403,7 @@
 		  "content-type": "application/json",
 		  "x-apikey": "61e16a0fa0f7d226f9b75e1a",
 		  "cache-control": "no-cache"
-		}tidak
+		}
 	  }
 	  
 	  let testimonyBody = $("#testimony-body")

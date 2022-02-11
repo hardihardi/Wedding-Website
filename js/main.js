@@ -444,9 +444,18 @@
 
 	const urlParams = new URLSearchParams(window.location.search);
 	const untuk = urlParams.get('untuk');
+	const sesi = urlParams.get('sesi');
 
 	if(untuk != undefined){
 		$("#dear").text(`${untuk}`)
+	}
+
+	if(sesi != undefined){
+		if(sesi == 1){
+			$("#sesi").text(`( Undangan Sesi 1 )`)
+		}else if(sesi == 2){
+			$("#sesi").text(`( Undangan Sesi 1 )`)
+		}
 	}
 
 	$("#open-modal").click(function(){
@@ -465,6 +474,14 @@
 		})
 	})
 
+	$(".btn-copy").on("click", function() {
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val($(this).attr("data-value")).select();
+		document.execCommand("copy");
+		$temp.remove();
+		$(this).text("Berhasil Disalin").css("background", "#041E3B")
+	})
 setInterval(function() { makeTimer(); }, 1000);
 
 })(jQuery);

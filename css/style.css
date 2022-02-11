@@ -13650,6 +13650,11 @@ textarea.form-control {
 
 
 @media (max-width: 768px) {
+
+  .btn-copy {
+    bottom : 50px!important;
+  }
+
   .card {
     margin-bottom: 40px;
   }

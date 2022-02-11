@@ -454,7 +454,7 @@
 		if(sesi == 1){
 			$("#sesi").text(`( Undangan Sesi 1 )`)
 		}else if(sesi == 2){
-			$("#sesi").text(`( Undangan Sesi 1 )`)
+			$("#sesi").text(`( Undangan Sesi 2 )`)
 		}
 	}
 

@@ -16,9 +16,9 @@
     scrollProperty: 'scroll'
   });	
 
-  if ('scrollRestoration' in history) {
-	history.scrollRestoration = 'manual';
-  }
+//   if ('scrollRestoration' in history) {
+// 	history.scrollRestoration = 'manual';
+//   }
 
 
   $(".music-player").on("click", function(){
@@ -326,8 +326,9 @@
 		let name =  $("#name").val(); 
 		let status =  $("#status").val(); 
 		let message =  $("#message").val(); 
+		let attendance =  $("#attendance").val(); 
 
-		let jsondata = {"name": name,"status": status, "comment" : message};
+		let jsondata = {"name": name,"status": status, "comment" : message, "attendance" : attendance};
 
 		let settings = {
 		"async": true,
@@ -354,7 +355,7 @@
 	})
 
 
-	let testimonyComponent = (name, status, message) => {
+	let testimonyComponent = (name, status, message, attendance) => {
 		let listIcon = ["1.png","6.ico", "7.ico","8.ico","10.ico","11.ico","12.ico","9.jpeg"]
 		let icon = listIcon[Math.floor(Math.random()*listIcon.length)];
 
@@ -367,7 +368,7 @@
 						<div class="user-img" style="background-image: url(images/avatar/${icon})"></div>
 						<div class="pl-3">
 							<p class="name">${name}</p>
-							<span class="position">${status}</span>
+							<span class="position">${status} (${attendance})</span>
 					</div>
 				</div>
 			</div>
@@ -410,7 +411,7 @@
 	  $.ajax(settings).done(function (response) {
 		  let newComponent =[]
 		  shuffle(response).forEach(val => {
-			newComponent.push( testimonyComponent(val.name, val.status, val.comment))
+			newComponent.push( testimonyComponent(val.name, val.status, val.comment, val.attendance))
 
 		  })
 

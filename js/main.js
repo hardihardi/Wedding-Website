@@ -16,9 +16,9 @@
     scrollProperty: 'scroll'
   });	
 
-//   if ('scrollRestoration' in history) {
-// 	history.scrollRestoration = 'manual';
-//   }
+  if ('scrollRestoration' in history) {
+	history.scrollRestoration = 'manual';
+  }
 
 
   $(".music-player").on("click", function(){
@@ -403,7 +403,7 @@
 		  "content-type": "application/json",
 		  "x-apikey": "61e16a0fa0f7d226f9b75e1a",
 		  "cache-control": "no-cache"
-		}
+		}tidak
 	  }
 	  
 	  let testimonyBody = $("#testimony-body")

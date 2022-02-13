@@ -13651,6 +13651,10 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 
+  .text-sm-40{
+    font-size: 40px!important;
+  }
+
   .ftco-section#closing{
     padding-top : 10px;
     padding-bottom: 10px;

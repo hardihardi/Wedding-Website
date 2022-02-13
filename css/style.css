@@ -13651,6 +13651,11 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 
+  .ftco-section#closing{
+    padding-top : 10px;
+    padding-bottom: 10px;
+  }
+
   .btn-copy {
     bottom : 50px!important;
   }
